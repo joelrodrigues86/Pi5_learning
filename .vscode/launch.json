@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Pi4_TestProject",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "~/TestProject/TestProject",
+            "args": [],
+            "cwd": "~/TestProject",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "pipeTransport": {
+                "pipeCwd": "${workspaceRoot}",
+                "pipeProgram": "ssh",
+                "pipeArgs": [
+                    "pi@raspberrypi"
+                ],
+                "debuggerPath": "~/vsdbg/vsdbg"
+            }
+        },
+        {
+            "name": "Pi5_TestProject",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "~/TestProject/TestProject",
+            "args": [],
+            "cwd": "~/TestProject",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "pipeTransport": {
+                "pipeCwd": "${workspaceRoot}",
+                "pipeProgram": "ssh",
+                "pipeArgs": [
+                    "pi5@raspberrypi5"
+                ],
+                "debuggerPath": "~/vsdbg/vsdbg"
+            }
+        },        
+    ]
+}
